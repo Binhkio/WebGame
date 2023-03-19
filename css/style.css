@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Yesteryear);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Yesteryear', cursive;
+    background-color: rgb(230, 230, 230);
+    font-size: 30px;
+    margin: 20px 20px;
+    background:linear-gradient(90deg, #89f7fe 0%,#66a6ff 100% );
+}
+
+.list-game {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.game-play {
+    width: 20%;
+    height: 56px;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    cursor: pointer;
+    float: left;
+    background:linear-gradient(90deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.game-play:hover {
+    /* opacity: 0.8; */
+    border-width: 3px;
+}
+
+.chosen {
+    color: #b623ff;
+    border-width: 2px;
+}
+
+.playing {
+    color: #8223ff;
+    
+}
+
+.x-color {
+    color: rgb(255 64 64);
+}
+
+.o-color {
+    color: rgb(22 71 251);
+}
+
+.game-display {
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.game-time, .game-score {
+    width: fit-content;
+}
+
+.start-button {
+    cursor: pointer;
+}
+
+
+.game-board {
+    max-width: 400px;
+    max-height: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.xo-square {
+    width: 50px;
+    height: 50px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+
+.snake-game-board {
+    margin-top: 5px;
+    border-color: rgb(112, 112, 112);
+    border-style: solid;
+    border-width: 2px;
+}
+.snake-square {
+    width: 10px;
+    height: 10px;
+    border-color: transparent;
+}
+.snake-square.snake-color {
+    background-color: green;
+    border-radius: 20px;
+}
+.apple-color {
+    background-color: rgb(128, 19, 0);
+    border-radius: 20px;
+}
+.appleS-color {
+    background-color: rgb(255, 196, 0);
+    border-radius: 20px;
+}
+
+.footer {
+    margin-top: 90px;
+}
